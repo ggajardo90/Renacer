@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/* -----INICIO NAV----- */
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img:hover {
+    transform: scale(0.8);
+}
+
+.header .logo img{
+    height:200px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .nav-renacer li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-renacer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: inherit;
+    font-family: 'Solitreo', cursive; 
+}
+
+.header .nav-renacer a:hover{
+    color:  #e67e22 ;
+}
+
+/* boton login */
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: 'Solitreo', cursive; 
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #e67e22;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #e67e22;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Solitreo', cursive; 
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+/* -----FIN  NAV----- */
+
+/* IMAGEN PRINCIPAL */
+
+ .img-principal img{
+    width: 100%;
+    height: 700px;
+} 
+
+.container{
+    overflow: hidden;
+    position: relative; 
+}
+
+.container p{
+   font-size: 3rem;
+   color:black;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+   font-family: 'Solitreo', cursive; 
+}
+
+.container span{
+    font-size: 3rem;
+    color:black;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    font-family: 'Solitreo', cursive; 
+ }
+ 
+/* FIN PRINCIPAL */
+
+/* DISENO NOSOTROS */
+
+.container-nosotros{
+    margin-bottom: 80px;
+}
+
+.titulo-nosotros h1{
+    color: #fff;
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    transform: translateY(35%);
+    opacity: 0.10;
+    margin: -30px;
+    font-family: 'Solitreo', cursive; 
+}
+.titulo-nosotros h2{
+    color:#fff;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Solitreo', cursive; 
+}
+
+.titulo-nosotros p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 30px 100px 30px 100px;
+    text-align: center;
+    
+}
+
+/* FIN NOSOTROS */
+/* Inicio Mision */
+.container-mision{
+    background-color: rgba(255, 255, 255, 0.904);
+    padding-bottom: 30px;
+
+}
+
+.titulo-mision h1{
+    color: rgb(7, 7, 7);
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    transform: translateY(35%);
+    opacity: 0.10;
+    margin: -30px;
+    font-family: 'Solitreo', cursive; 
+}
+
+.titulo-mision h2{
+    color: rgb(7, 7, 7);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Solitreo', cursive; 
+}
+
+.titulo-mision p{
+    color: rgb(7, 7, 7);
+    display: flex;
+    justify-content: center;
+    margin: 30px 100px 30px 100px;
+    text-align: center;
+}
+
+/* FIN Mision */
+
+.container-vision{
+    padding-bottom: 30px;
+
+}
+
+.titulo-vision h1{
+    color: #fff;
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    transform: translateY(35%);
+    opacity: 0.10;
+    margin: -30px;
+    font-family: 'Solitreo', cursive; 
+}
+
+.titulo-vision h2{
+    color: #fff;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Solitreo', cursive; 
+}
+
+.titulo-vision p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 30px 100px 30px 100px;
+    text-align: center;
+}
